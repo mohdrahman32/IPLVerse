@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLVerse - Points Table & Playoffs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/hover-min.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            /* Removed overflow: hidden to allow scrolling */
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff4500, #8b0000, #1a1a1a);
+        }
+        /* Tab Buttons */
+        .tab-button {
+            font-style: italic;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .tab-button.active {
+            background-color: #ff4500;
+            color: white;
+        }
+        .tab-button.inactive {
+            background-color: white;
+            color: black;
+            border: 2px solid #ff4500;
+        }
+        /* Table Styling */
+        .points-table th {
+            background-color: #2d2d2d;
+            color: #fff;
+            font-weight: 600;
+        }
+        .points-table tr:nth-child(even) {
+            background-color: #252525;
+        }
+        .points-table tr:nth-child(odd) {
+            background-color: #1f1f1f;
+        }
+        .points-table td, .points-table th {
+            padding: 12px;
+            text-align: center;
+        }
+        /* Playoffs Section */
+        .playoffs-section {
+            background: linear-gradient(135deg, #1a1a1a, #8b0000, #cf3700, #1a1a1a); /* Theme gradient */
+            position: relative;
+            padding: 40px 0;
+            min-height: 100vh; /* Ensure section takes full height for particles */
+            overflow: hidden; /* Contain particles within this section */
+        }
+        .team-box {
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            min-width: 150px;
+            text-align: center;
+        }
+        .match-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .trophy-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
+        /* Particle Styles */
+        .particle {
+            position: absolute;
+            background: rgb(255, 68, 0); /* Orange */
+            border-radius: 50%;
+            animation: float 15s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-20px) translateX(20px); }
+            50% { transform: translateY(0) translateX(0); }
+            75% { transform: translateY(20px) translateX(-20px); }
+            100% { transform: translateY(0) translateX(0); }
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .points-table-container {
+                overflow-x: auto;
+            }
+            .playoffs-bracket {
+                transform: scale(0.8);
+            }
+            .team-box {
+                min-width: 100px;
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+            .match-box {
+                font-size: 0.8rem;
+                padding: 6px;
+            }
+            .playoffs-bracket > div {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .playoffs-section {
+                min-height: 80vh; /* Adjust height for smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .playoffs-bracket {
+                transform: scale(0.7);
+            }
+            .team-box {
+                min-width: 80px;
+                font-size: 0.8rem;
+                padding: 6px;
+            }
+            .match-box {
+                font-size: 0.7rem;
+                padding: 4px;
+            }
+            .playoffs-section {
+                min-height: 70vh; /* Further adjust height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Navigation Bar) - Same as Homepage -->
+    <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <div data-aos="fade-right" class="text-3xl font-bold neon-glow animate-logo">
+                IPLVerse
+            </div>
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-lg">
+                <li><a href="index.html" class="hover:text-orange-500 hvr-bounce-in">Home</a></li>
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">Teams</a></li>
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">Schedule</a></li>
+                <li><a href="points_table.html" class="hover:text-orange-500 hvr-bounce-in">Points Table</a></li>
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">Stats</a></li>
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">Highlights</a></li>
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">About</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-center py-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                <li><a href="#" class="hover:text-orange-500">Teams</a></li>
+                <li><a href="#" class="hover:text-orange-500">Schedule</a></li>
+                <li><a href="points_table.html" class="hover:text-orange-500">Points Table</a></li>
+                <li><a href="#" class="hover:text-orange-500">Stats</a></li>
+                <li><a href="#" class="hover:text-orange-500">Highlights</a></li>
+                <li><a href="#" class="hover:text-orange-500">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <section class="py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-4 mb-8" data-aos="fade-up">
+                <button id="points-tab" class="tab-button active">Points Table</button>
+                <button id="playoffs-tab" class="tab-button inactive">Playoffs</button>
+            </div>
+
+            <!-- Points Table Section -->
+            <div id="points-table-section" class="block transition-opacity duration-500">
+                <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 neon-glow" data-aos="fade-up">IPL 2025 Points Table</h1>
+                <p class="text-lg text-center text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="100">
+                    Check IPL standings from 2008 to 2025, including team rankings, wins, losses, net run rate (NRR), and total points.
+                </p>
+                <div class="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <select id="season-select" class="bg-gray-800 text-white border border-orange-500 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 hover:bg-gray-700 transition duration-300">
+                        <option value="2008">IPL 2008</option>
+                        <option value="2009">IPL 2009</option>
+                        <option value="2010">IPL 2010</option>
+                        <option value="2011">IPL 2011</option>
+                        <option value="2012">IPL 2012</option>
+                        <option value="2013">IPL 2013</option>
+                        <option value="2014">IPL 2014</option>
+                        <option value="2015">IPL 2015</option>
+                        <option value="2016">IPL 2016</option>
+                        <option value="2017">IPL 2017</option>
+                        <option value="2018">IPL 2018</option>
+                        <option value="2019">IPL 2019</option>
+                        <option value="2020">IPL 2020</option>
+                        <option value="2021">IPL 2021</option>
+                        <option value="2022">IPL 2022</option>
+                        <option value="2023">IPL 2023</option>
+                        <option value="2024">IPL 2024</option>
+                        <option value="2025" selected>IPL 2025</option>
+                    </select>
+                </div>
+                <div class="points-table-container" data-aos="fade-up" data-aos-delay="300">
+                    <table class="points-table w-full text-sm md:text-base">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Team</th>
+                                <th>Matches Played</th>
+                                <th>Won</th>
+                                <th>Lost</th>
+                                <th>Tied</th>
+                                <th>Points</th>
+                                <th>NRR</th>
+                            </tr>
+                        </thead>
+                        <tbody id="points-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Playoffs Section -->
+            <div id="playoffs-section" class="hidden transition-opacity duration-500 playoffs-section">
+                <div class="container mx-auto px-6 relative">
+                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 neon-glow" data-aos="fade-up">IPL Playoffs</h1>
+                    <p class="text-lg text-center text-gray-200 mb-8" data-aos="fade-up" data-aos-delay="100">
+                        Relive the thrilling IPL Playoffs from 2011 to 2025!
+                    </p>
+                    <div class="flex justify-end mb-8" data-aos="fade-up" data-aos-delay="200">
+                        <select id="playoff-season-select" class="bg-gray-800 text-white border border-orange-500 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 hover:bg-gray-700 transition duration-300">
+                            <option value="2011">IPL 2011</option>
+                            <option value="2012">IPL 2012</option>
+                            <option value="2013">IPL 2013</option>
+                            <option value="2014">IPL 2014</option>
+                            <option value="2015">IPL 2015</option>
+                            <option value="2016">IPL 2016</option>
+                            <option value="2017">IPL 2017</option>
+                            <option value="2018">IPL 2018</option>
+                            <option value="2019">IPL 2019</option>
+                            <option value="2020">IPL 2020</option>
+                            <option value="2021">IPL 2021</option>
+                            <option value="2022">IPL 2022</option>
+                            <option value="2023">IPL 2023</option>
+                            <option value="2024" selected>IPL 2024</option>
+                            <option value="2025">IPL 2025</option>
+                        </select>
+                    </div>
+                    <div class="playoffs-bracket flex flex-col items-center relative" data-aos="fade-up" data-aos-delay="300">
+                        <!-- Qualifier 1 -->
+                        <div class="flex items-center mb-8">
+                            <div id="qualifier1-team1" class="team-box mr-4" style="background-color: #4B0082;"></div>
+                            <div class="match-box mx-4">
+                                <p>QUALIFIER 1</p>
+                                <p id="qualifier1-details"></p>
+                            </div>
+                            <div id="qualifier1-team2" class="team-box ml-4" style="background-color: #FF4500;"></div>
+                        </div>
+                        <!-- Eliminator -->
+                        <div class="flex items-center mb-8">
+                            <div id="eliminator-team1" class="team-box mr-4" style="background-color: #1E90FF;"></div>
+                            <div class="match-box mx-4">
+                                <p>ELIMINATOR</p>
+                                <p id="eliminator-details"></p>
+                            </div>
+                            <div id="eliminator-team2" class="team-box ml-4" style="background-color: #FF6347;"></div>
+                        </div>
+                        <!-- Qualifier 2 -->
+                        <div class="flex items-center mb-8">
+                            <div id="qualifier2-team1" class="team-box mr-4" style="background-color: #FF4500;"></div>
+                            <div class="match-box mx-4">
+                                <p>QUALIFIER 2</p>
+                                <p id="qualifier2-details"></p>
+                            </div>
+                            <div id="qualifier2-team2" class="team-box ml-4" style="background-color: #1E90FF;"></div>
+                        </div>
+                        <!-- Final -->
+                        <div class="flex items-center">
+                            <div id="final-team1" class="team-box mr-4 flex items-center" style="background-color: #4B0082;"></div>
+                            <div class="match-box mx-4">
+                                <p>FINAL</p>
+                                <p id="final-details"></p>
+                            </div>
+                            <div id="final-team2" class="team-box ml-4 flex items-center" style="background-color: #FF4500;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Homepage) -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+            <p class="text-gray-400">Contact: support@iplverse.com | © 2025 IPLVerse. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="index.html" class="text-orange-500 hover:text-orange-600 mx-2">Home</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600 mx-2">Teams</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600 mx-2">Schedule</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600 mx-2">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="points-table.js"></script>
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

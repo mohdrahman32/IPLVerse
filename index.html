@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLVerse - Your Ultimate IPL Experience</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/hover-min.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff4500, #8b0000, #1a1a1a);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Navigation Bar) -->
+    <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <div data-aos="fade-right" class="text-3xl font-bold neon-glow animate-logo">
+                IPLVerse
+            </div>
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-lg">
+                <li><a href="#" class="hover:text-orange-500 hvr-bounce-in">Home</a></li>
+                <li><a href="teams.html" class="hover:text-orange-500 hvr-bounce-in">Teams</a></li>
+                <li><a href="schedule.html" class="hover:text-orange-500 hvr-bounce-in">Schedule</a></li>
+                <li><a href="points-table.html" class="hover:text-orange-500 hvr-bounce-in">Points Table</a></li>
+                <li><a href="stats.html" class="hover:text-orange-500 hvr-bounce-in">Stats</a></li>
+                <li><a href="highlights.html" class="hover:text-orange-500 hvr-bounce-in">Highlights</a></li>
+                <li><a href="about.html" class="hover:text-orange-500 hvr-bounce-in">About</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-center py-4">
+            <ul class="space-y-4">
+                <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                <li><a href="teams.html" class="hover:text-orange-500">Teams</a></li>
+                <li><a href="schedule.html" class="hover:text-orange-500">Schedule</a></li>
+                <li><a href="points-table.html" class="hover:text-orange-500">Points Table</a></li>
+                <li><a href="stats.html" class="hover:text-orange-500">Stats</a></li>
+                <li><a href="highlights.html" class="hover:text-orange-500">Highlights</a></li>
+                <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 text-center">
+        <div class="container mx-auto" data-aos="fade-up">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">IPLVerse - Unleash the Cricket Fever</h1>
+            <p class="text-xl mb-6">Your one-stop destination for IPL 2025 updates, schedules, and more!</p>
+            <a href="#" class="bg-orange-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-orange-600 hvr-grow">Explore Teams</a>
+        </div>
+    </section>
+    
+ <!-- Featured Matches -->
+<section class="py-16">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8 neon-glow" data-aos="fade-up">Featured Matches</h2>
+        <p class="text-xl text-center text-orange-400 mb-8" data-aos="fade-up" data-aos-delay="100">
+            "Kick off IPL 2025 with a bang! Catch the first three weekend thrillers - Saturday & Sunday!"
+        </p>
+        <div class="flex flex-col md:flex-row justify overflow-y-auto md:overflow-x-auto space-y-6 md:space-y-0 md:space-x-6 pb-4 max-h-[350px] md:max-h-none snap-y snap-mandatory">
+            <!-- Match Card 1 -->
+            <div class="min-w-[350px] bg-gray-800 rounded-lg p-6 shadow-lg snap-start" data-aos="fade-right">
+                <div class="flex items-center justify-between">
+                    <img src="assets/kkr.png" alt="KKR Logo" class="w-16 h-16 object-contain">
+                    <span class="text-xl font-semibold">vs</span>
+                    <img src="assets/rcb.png" alt="RCB Logo" class="w-16 h-16 object-contain">
+                </div>
+                <p class="mt-6 text-lg">March 22, 2025 | 7:30 PM</p>
+                <p class="text-gray-400">Eden Gardens, Kolkata</p>
+            </div>
+            <!-- Match Card 2 -->
+            <div class="min-w-[350px] bg-gray-800 rounded-lg p-6 shadow-lg snap-start" data-aos="fade-up">
+                <div class="flex items-center justify-between">
+                    <img src="assets/srh.png" alt="SRH Logo" class="w-16 h-16 object-contain">
+                    <span class="text-xl font-semibold">vs</span>
+                    <img src="assets/rr.png" alt="RR Logo" class="w-16 h-16 object-contain">
+                </div>
+                <p class="mt-6 text-lg">March 23, 2025 | 3:30 PM</p>
+                <p class="text-gray-400">Rajiv Gandhi International Stadium, Hyderabad</p>
+            </div>
+            <!-- Match Card 3 -->
+            <div class="min-w-[350px] bg-gray-800 rounded-lg p-6 shadow-lg snap-start" data-aos="fade-left">
+                <div class="flex items-center justify-between">
+                    <img src="assets/csk.png" alt="CSK Logo" class="w-16 h-16 object-contain">
+                    <span class="text-xl font-semibold">vs</span>
+                    <img src="assets/mi.png" alt="MI Logo" class="w-16 h-16 object-contain">
+                </div>
+                <p class="mt-6 text-lg">March 23, 2025 | 7:30 PM</p>
+                <p class="text-gray-400">MA Chidambaram Stadium, Chennai</p>
+            </div>
+            <!-- New Card with Button (Adjusted for Mobile) -->
+            <div class="min-w-[350px] bg-gray-800 rounded-lg p-6 shadow-lg snap-start" data-aos="fade-up">
+                <h3 class="text-xl font-semibold text-orange-400 mb-2">Full IPL 2025 Schedule</h3>
+                <p class="text-gray-400 text-sm mb-4">See all 74 matches – click to explore!</p>
+                <a href="schedule.html" class="bg-orange-500 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-orange-600 transition duration-300 hvr-grow hvr-pulse">
+                    See All Matches
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- IPL News & Updates -->
+<section class="py-16 bg-gray-900">
+  <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8 neon-glow" data-aos="fade-up">IPL News & Updates</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- News Card 1 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up">
+              <div class="w-1/2">
+                  <img src="assets/bumrah.jpg" alt="Bumrah News" class="w-full h-full object-contain">
+              </div>
+              <div class="w-1/2 p-4 flex flex-col justify-between">
+                  <div>
+                      <h3 class="text-xl font-semibold">Bumrah Set to Miss First Few IPL 2025 Games for Mumbai Indians</h3>
+                      <p class="text-gray-400 mt-2">He is still recovering from the back injury that has kept him out of action since January, and is likely to join the MI squad by early April.</p>
+                  </div>
+                  <a href="https://www.espncricinfo.com/story/ipl-2025-mumbai-indians-news-jasprit-bumrah-expected-to-miss-first-few-games-for-mi-1476942" target="_blank" class="inline-flex items-center text-[#ED6900] hover:text-white mt-4">
+                      Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
+          </div>
+          <!-- News Card 2 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="w-1/2">
+                  <img src="assets/mulder.jpeg" alt="Mulder News" class="w-full h-full object-contain">
+              </div>
+              <div class="w-1/2 p-4 flex flex-col justify-between">
+                  <div>
+                      <h3 class="text-xl font-semibold">SRH Sign Mulder as Replacement</h3>
+                      <p class="text-gray-400 mt-2">Sunrisers Hyderabad allrounder Brydon Carse has been ruled out of IPL 2025 with a toe injury. SRH have signed Wiaan Mulder as a like-for-like replacement.</p>
+                  </div>
+                  <a href="https://www.espncricinfo.com/story/ipl-2025-wiaan-mulder-replaces-injured-brydon-carse-for-srh-1476166" target="_blank" class="inline-flex items-center text-[#ED6900] hover:text-white mt-4">
+                      Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
+          </div>
+          <!-- News Card 3 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-1/2">
+                  <img src="assets/axar.jpeg" alt="Axar News" class="w-full h-full object-contain">
+              </div>
+              <div class="w-1/2 p-4 flex flex-col justify-between">
+                  <div>
+                      <h3 class="text-xl font-semibold">Axar Patel to Captain Delhi Capitals in IPL 2025</h3>
+                      <p class="text-gray-400 mt-2">Left-arm spin-bowling allrounder will work with a brand new coaching staff as DC aim for first title.</p>
+                  </div>
+                  <a href="https://www.espncricinfo.com/story/axar-patel-to-captain-delhi-capitals-in-ipl-2025-1476725" target="_blank" class="inline-flex items-center text-[#ED6900] hover:text-white mt-4">
+                      Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 md:space-x-6 footer-social-links mb-4">
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-x-twitter text-xl"></i> Twitter</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-instagram text-xl"></i> Instagram</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-facebook text-xl"></i> Facebook</a>
+            </div>
+            <p class="text-gray-400">Contact: support@iplverse.com | &copy; 2025 IPLVerse. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-orange-500 hover:text-orange-600 mx-2">Home</a>
+                <a href="teams.html" class="text-orange-500 hover:text-orange-600 mx-2">Teams</a>
+                <a href="schedule.html" class="text-orange-500 hover:text-orange-600 mx-2">Schedule</a>
+                <a href="about.html" class="text-orange-500 hover:text-orange-600 mx-2">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Logo Typing + Scramble Animation
+        const logo = document.querySelector('.animate-logo');
+        const text = logo.textContent;
+        logo.textContent = '';
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                logo.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 150);
+            }
+        }
+        typeWriter();
+    </script>
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

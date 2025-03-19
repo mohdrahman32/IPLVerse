@@ -1,0 +1,392 @@
+{
+    "2011": {
+      "qualifier_1": {
+        "teams": ["Chennai Super Kings", "Royal Challengers Bengaluru"],
+        "date": "May 24",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Chennai Super Kings"
+      },
+      "eliminator": {
+        "teams": ["Mumbai Indians", "Kolkata Knight Riders"],
+        "date": "May 25",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Mumbai Indians"
+      },
+      "qualifier_2": {
+        "teams": ["Royal Challengers Bengaluru", "Mumbai Indians"],
+        "date": "May 27",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Royal Challengers Bengaluru"
+      },
+      "final": {
+        "teams": ["Chennai Super Kings", "Royal Challengers Bengaluru"],
+        "date": "May 28",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Chennai Super Kings"
+      }
+    },
+    "2012": {
+      "qualifier_1": {
+        "teams": ["Delhi Daredevils", "Kolkata Knight Riders"],
+        "date": "May 22",
+        "stadium": "Subrata Roy Sahara Stadium, Pune",
+        "winner": "Kolkata Knight Riders"
+      },
+      "eliminator": {
+        "teams": ["Mumbai Indians", "Chennai Super Kings"],
+        "date": "May 23",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Chennai Super Kings"
+      },
+      "qualifier_2": {
+        "teams": ["Delhi Daredevils", "Chennai Super Kings"],
+        "date": "May 25",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Chennai Super Kings"
+      },
+      "final": {
+        "teams": ["Kolkata Knight Riders", "Chennai Super Kings"],
+        "date": "May 27",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Kolkata Knight Riders"
+      }
+    },
+    "2013": {
+      "qualifier_1": {
+        "teams": ["Chennai Super Kings", "Mumbai Indians"],
+        "date": "May 21",
+        "stadium": "Feroz Shah Kotla, Delhi",
+        "winner": "Chennai Super Kings"
+      },
+      "eliminator": {
+        "teams": ["Rajasthan Royals", "Sunrisers Hyderabad"],
+        "date": "May 22",
+        "stadium": "Feroz Shah Kotla, Delhi",
+        "winner": "Rajasthan Royals"
+      },
+      "qualifier_2": {
+        "teams": ["Mumbai Indians", "Rajasthan Royals"],
+        "date": "May 24",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Mumbai Indians"
+      },
+      "final": {
+        "teams": ["Chennai Super Kings", "Mumbai Indians"],
+        "date": "May 26",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Mumbai Indians"
+      }
+    },
+    "2014": {
+      "qualifier_1": {
+        "teams": ["Punjab Kings", "Kolkata Knight Riders"],
+        "date": "May 27",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Kolkata Knight Riders"
+      },
+      "eliminator": {
+        "teams": ["Chennai Super Kings", "Mumbai Indians"],
+        "date": "May 28",
+        "stadium": "Brabourne Stadium, Mumbai",
+        "winner": "Chennai Super Kings"
+      },
+      "qualifier_2": {
+        "teams": ["Punjab Kings", "Chennai Super Kings"],
+        "date": "May 30",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Punjab Kings"
+      },
+      "final": {
+        "teams": ["Kolkata Knight Riders", "Punjab Kings"],
+        "date": "June 1",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Kolkata Knight Riders"
+      }
+    },
+    "2015": {
+      "qualifier_1": {
+        "teams": ["Chennai Super Kings", "Mumbai Indians"],
+        "date": "May 19",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Mumbai Indians"
+      },
+      "eliminator": {
+        "teams": ["Royal Challengers Bengaluru", "Rajasthan Royals"],
+        "date": "May 20",
+        "stadium": "Maharashtra Cricket Association Stadium, Pune",
+        "winner": "Royal Challengers Bengaluru"
+      },
+      "qualifier_2": {
+        "teams": ["Chennai Super Kings", "Royal Challengers Bengaluru"],
+        "date": "May 22",
+        "stadium": "JSCA International Stadium Complex, Ranchi",
+        "winner": "Chennai Super Kings"
+      },
+      "final": {
+        "teams": ["Mumbai Indians", "Chennai Super Kings"],
+        "date": "May 24",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Mumbai Indians"
+      }
+    },
+    "2016": {
+      "qualifier_1": {
+        "teams": ["Gujarat Lions", "Royal Challengers Bengaluru"],
+        "date": "May 24",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Royal Challengers Bengaluru"
+      },
+      "eliminator": {
+        "teams": ["Sunrisers Hyderabad", "Kolkata Knight Riders"],
+        "date": "May 25",
+        "stadium": "Arun Jaitley Stadium, Delhi",
+        "winner": "Sunrisers Hyderabad"
+      },
+      "qualifier_2": {
+        "teams": ["Gujarat Lions", "Sunrisers Hyderabad"],
+        "date": "May 27",
+        "stadium": "Arun Jaitley Stadium, Delhi",
+        "winner": "Sunrisers Hyderabad"
+      },
+      "final": {
+        "teams": ["Royal Challengers Bengaluru", "Sunrisers Hyderabad"],
+        "date": "May 29",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Sunrisers Hyderabad"
+      }
+    },
+    "2017": {
+      "qualifier_1": {
+        "teams": ["Mumbai Indians", "Rising Pune Supergiant"],
+        "date": "May 16",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Rising Pune Supergiant"
+      },
+      "eliminator": {
+        "teams": ["Sunrisers Hyderabad", "Kolkata Knight Riders"],
+        "date": "May 17",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Kolkata Knight Riders"
+      },
+      "qualifier_2": {
+        "teams": ["Mumbai Indians", "Kolkata Knight Riders"],
+        "date": "May 19",
+        "stadium": "M Chinnaswamy Stadium, Bengaluru",
+        "winner": "Mumbai Indians"
+      },
+      "final": {
+        "teams": ["Rising Pune Supergiant", "Mumbai Indians"],
+        "date": "May 21",
+        "stadium": "Rajiv Gandhi International Stadium, Hyderabad",
+        "winner": "Mumbai Indians"
+      }
+    },
+    "2018": {
+      "qualifier_1": {
+        "teams": ["Sunrisers Hyderabad", "Chennai Super Kings"],
+        "date": "May 22",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Chennai Super Kings"
+      },
+      "eliminator": {
+        "teams": ["Kolkata Knight Riders", "Rajasthan Royals"],
+        "date": "May 23",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Kolkata Knight Riders"
+      },
+      "qualifier_2": {
+        "teams": ["Sunrisers Hyderabad", "Kolkata Knight Riders"],
+        "date": "May 25",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Sunrisers Hyderabad"
+      },
+      "final": {
+        "teams": ["Chennai Super Kings", "Sunrisers Hyderabad"],
+        "date": "May 27",
+        "stadium": "Wankhede Stadium, Mumbai",
+        "winner": "Chennai Super Kings"
+      }
+    },
+    "2019": {
+      "qualifier_1": {
+        "teams": ["Mumbai Indians", "Chennai Super Kings"],
+        "date": "May 7",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Mumbai Indians"
+      },
+      "eliminator": {
+        "teams": ["Delhi Capitals", "Sunrisers Hyderabad"],
+        "date": "May 8",
+        "stadium": "ACA-VDCA Cricket Stadium, Visakhapatnam",
+        "winner": "Delhi Capitals"
+      },
+      "qualifier_2": {
+        "teams": ["Chennai Super Kings", "Delhi Capitals"],
+        "date": "May 10",
+        "stadium": "ACA-VDCA Cricket Stadium, Visakhapatnam",
+        "winner": "Chennai Super Kings"
+      },
+      "final": {
+        "teams": ["Mumbai Indians", "Chennai Super Kings"],
+        "date": "May 12",
+        "stadium": "Rajiv Gandhi International Stadium, Hyderabad",
+        "winner": "Mumbai Indians"
+      }
+    },
+    "2020": {
+      "qualifier_1": {
+        "teams": ["Mumbai Indians", "Delhi Capitals"],
+        "date": "November 5",
+        "stadium": "Dubai International Cricket Stadium, Dubai",
+        "winner": "Mumbai Indians"
+      },
+      "eliminator": {
+        "teams": ["Sunrisers Hyderabad", "Royal Challengers Bengaluru"],
+        "date": "November 6",
+        "stadium": "Sheikh Zayed Stadium, Abu Dhabi",
+        "winner": "Sunrisers Hyderabad"
+      },
+      "qualifier_2": {
+        "teams": ["Delhi Capitals", "Sunrisers Hyderabad"],
+        "date": "November 8",
+        "stadium": "Sheikh Zayed Stadium, Abu Dhabi",
+        "winner": "Delhi Capitals"
+      },
+      "final": {
+        "teams": ["Mumbai Indians", "Delhi Capitals"],
+        "date": "November 10",
+        "stadium": "Dubai International Cricket Stadium, Dubai",
+        "winner": "Mumbai Indians"
+      }
+    },
+    "2021": {
+      "qualifier_1": {
+        "teams": ["Delhi Capitals", "Chennai Super Kings"],
+        "date": "October 10",
+        "stadium": "Dubai International Cricket Stadium, Dubai",
+        "winner": "Chennai Super Kings"
+      },
+      "eliminator": {
+        "teams": ["Royal Challengers Bengaluru", "Kolkata Knight Riders"],
+        "date": "October 11",
+        "stadium": "Sharjah Cricket Stadium, Sharjah",
+        "winner": "Kolkata Knight Riders"
+      },
+      "qualifier_2": {
+        "teams": ["Delhi Capitals", "Kolkata Knight Riders"],
+        "date": "October 13",
+        "stadium": "Sharjah Cricket Stadium, Sharjah",
+        "winner": "Kolkata Knight Riders"
+      },
+      "final": {
+        "teams": ["Chennai Super Kings", "Kolkata Knight Riders"],
+        "date": "October 15",
+        "stadium": "Dubai International Cricket Stadium, Dubai",
+        "winner": "Chennai Super Kings"
+      }
+    },
+    "2022": {
+      "qualifier_1": {
+        "teams": ["Gujarat Titans", "Rajasthan Royals"],
+        "date": "May 24",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Gujarat Titans"
+      },
+      "eliminator": {
+        "teams": ["Lucknow Super Giants", "Royal Challengers Bengaluru"],
+        "date": "May 25",
+        "stadium": "Eden Gardens, Kolkata",
+        "winner": "Royal Challengers Bengaluru"
+      },
+      "qualifier_2": {
+        "teams": ["Rajasthan Royals", "Royal Challengers Bengaluru"],
+        "date": "May 27",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Rajasthan Royals"
+      },
+      "final": {
+        "teams": ["Gujarat Titans", "Rajasthan Royals"],
+        "date": "May 29",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Gujarat Titans"
+      }
+    },
+    "2023": {
+      "qualifier_1": {
+        "teams": ["Gujarat Titans", "Chennai Super Kings"],
+        "date": "May 23",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Chennai Super Kings"
+      },
+      "eliminator": {
+        "teams": ["Lucknow Super Giants", "Mumbai Indians"],
+        "date": "May 24",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Mumbai Indians"
+      },
+      "qualifier_2": {
+        "teams": ["Gujarat Titans", "Mumbai Indians"],
+        "date": "May 26",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Gujarat Titans"
+      },
+      "final": {
+        "teams": ["Chennai Super Kings", "Gujarat Titans"],
+        "date": "May 29",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Chennai Super Kings"
+      }
+    },
+    "2024": {
+      "qualifier_1": {
+        "teams": ["Kolkata Knight Riders", "Sunrisers Hyderabad"],
+        "date": "May 21",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Kolkata Knight Riders"
+      },
+      "eliminator": {
+        "teams": ["Rajasthan Royals", "Royal Challengers Bengaluru"],
+        "date": "May 22",
+        "stadium": "Narendra Modi Stadium, Ahmedabad",
+        "winner": "Rajasthan Royals"
+      },
+      "qualifier_2": {
+        "teams": ["Sunrisers Hyderabad", "Rajasthan Royals"],
+        "date": "May 24",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Sunrisers Hyderabad"
+      },
+      "final": {
+        "teams": ["Kolkata Knight Riders", "Sunrisers Hyderabad"],
+        "date": "May 26",
+        "stadium": "MA Chidambaram Stadium, Chennai",
+        "winner": "Kolkata Knight Riders"
+      }
+    },
+    "2025": {
+      "qualifier_1": {
+        "teams": ["TBD", "TBD"],
+        "date": "TBD",
+        "stadium": "TBD",
+        "winner": "TBD"
+      },
+      "eliminator": {
+        "teams": ["TBD", "TBD"],
+        "date": "TBD",
+        "stadium": "TBD",
+        "winner": "TBD"
+      },
+      "qualifier_2": {
+        "teams": ["TBD", "TBD"],
+        "date": "TBD",
+        "stadium": "TBD",
+        "winner": "TBD"
+      },
+      "final": {
+        "teams": ["TBD", "TBD"],
+        "date": "TBD",
+        "stadium": "TBD",
+        "winner": "TBD"
+      }
+    }
+  }

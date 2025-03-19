@@ -1,0 +1,119 @@
+[
+    {
+      "stadium_id": 1,
+      "name": "Eden Gardens",
+      "location": "Kolkata, West Bengal",
+      "capacity": 68000,
+      "image": "teams/eden_gardens.jpg",
+      "pitch_report": "Balanced pitch, favors spinners in the second innings.",
+      "home_team": "Kolkata Knight Riders"
+    },
+    {
+      "stadium_id": 2,
+      "name": "Rajiv Gandhi International Stadium",
+      "location": "Hyderabad, Telangana",
+      "capacity": 55000,
+      "image": "teams/rajiv_gandhi.jpg",
+      "pitch_report": "Batting-friendly, but can assist pacers early with the new ball.",
+      "home_team": "Sunrisers Hyderabad"
+    },
+    {
+      "stadium_id": 3,
+      "name": "MA Chidambaram Stadium",
+      "location": "Chennai, Tamil Nadu",
+      "capacity": 50000,
+      "image": "teams/ma_chidambaram.webp",
+      "pitch_report": "Spin-friendly surface, tough for fast bowlers.",
+      "home_team": "Chennai Super Kings"
+    },
+    {
+      "stadium_id": 4,
+      "name": "ACA-VDCA Cricket Stadium",
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "capacity": 25000,
+      "image": "teams/aca-vdca.avif",
+      "pitch_report": "Good batting track with a lush outfield, can assist pacers early.",
+      "home_team": "Delhi Capitals"
+    },
+    {
+      "stadium_id": 5,
+      "name": "Narendra Modi Stadium",
+      "location": "Ahmedabad, Gujarat",
+      "capacity": 132000,
+      "image": "teams/narendra-modi.jpg",
+      "pitch_report": "Varied pitch, supports both batsmen and bowlers depending on conditions.",
+      "home_team": "Gujarat Titans"
+    },
+    {
+      "stadium_id": 6,
+      "name": "Barsapara Cricket Stadium",
+      "location": "Guwahati, Assam",
+      "capacity": 55000,
+      "image": "teams/barsapara.jpg",
+      "pitch_report": "Balanced pitch, offers assistance to both pacers and spinners.",
+      "home_team": "Rajasthan Royals"
+    },
+    {
+      "stadium_id": 7,
+      "name": "Wankhede Stadium",
+      "location": "Mumbai, Maharashtra",
+      "capacity": 33000,
+      "image": "teams/wankhede.jpg",
+      "pitch_report": "Batting-friendly with good bounce, ideal for high-scoring matches.",
+      "home_team": "Mumbai Indians"
+    },
+    {
+      "stadium_id": 8,
+      "name": "BRSABV Ekana Cricket Stadium",
+      "location": "Lucknow, Uttar Pradesh",
+      "capacity": 50000,
+      "image": "teams/ekana.webp",
+      "pitch_report": "Slow pitch, favors spinners and tactical batting.",
+      "home_team": "Lucknow Super Giants"
+    },
+    {
+      "stadium_id": 9,
+      "name": "M. Chinnaswamy Stadium",
+      "location": "Bengaluru, Karnataka",
+      "capacity": 40000,
+      "image": "teams/chinnaswamy.jpg",
+      "pitch_report": "Batting paradise with short boundaries, high-scoring matches expected.",
+      "home_team": "Royal Challengers Bengaluru"
+    },
+    {
+      "stadium_id": 10,
+      "name": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "location": "New Chandigarh, Punjab",
+      "capacity": 38000,
+      "image": "teams/maharaja_yadavindra.jpg",
+      "pitch_report": "New pitch, expected to be balanced with assistance for seamers.",
+      "home_team": "Punjab Kings"
+    },
+    {
+      "stadium_id": 11,
+      "name": "Sawai Mansingh Stadium",
+      "location": "Jaipur, Rajasthan",
+      "capacity": 30000,
+      "image": "teams/sawai_mansingh.jpg",
+      "pitch_report": "Balanced pitch, offers something for both batsmen and bowlers.",
+      "home_team": "Rajasthan Royals"
+    },
+    {
+      "stadium_id": 12,
+      "name": "Arun Jaitley Stadium",
+      "location": "Delhi",
+      "capacity": 41000,
+      "image": "teams/arun_jaitley.webp",
+      "pitch_report": "Slow pitch, helps spinners and medium pacers.",
+      "home_team": "Delhi Capitals"
+    },
+    {
+      "stadium_id": 13,
+      "name": "Himachal Pradesh Cricket Association Stadium",
+      "location": "Dharamsala, Himachal Pradesh",
+      "capacity": 25000,
+      "image": "teams/hpca_dharamsala.webp",
+      "pitch_report": "Bowling-friendly, assists pacers with swing due to altitude.",
+      "home_team": "Punjab Kings"
+    }
+  ]

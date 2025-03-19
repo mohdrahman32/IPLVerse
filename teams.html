@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLVerse - Teams</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/hover-min.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff4500, #8b0000, #1a1a1a);
+        }
+        .team-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .team-button:hover {
+            transform: scale(1.1);
+        }
+        .team-card {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            max-width: 500px;
+            width: 90%;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+        }
+        .team-card.fade-in {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        .team-card.fade-out {
+            animation: fadeOut 0.5s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; display: none; }
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        /* Team-specific colors */
+        .csk { background-color: #FFC107; color: #000; } /* Yellow */
+        .mi { background-color: #003087; } /* Blue */
+        .srh { background-color: #FF3C00; } /* Orange */
+        .rcb { background-color: #D81E1E; } /* Red */
+        .kkr { background-color: #3F1D5A; } /* Purple */
+        .rr { background-color: #E91E63; } /* Pink */
+        .dc { background-color: #0D47A1; } /* Blue */
+        .lsg { background-color: #00BCD4; } /* Cyan */
+        .pbks { background-color: #D32F2F; } /* Red */
+        .gt { background-color: #1B5E20; } /* Green */
+    </style>
+</head>
+<body>
+    <!-- Header (Navigation Bar) -->
+    <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div data-aos="fade-right" class="text-3xl font-bold neon-glow animate-logo">IPLVerse</div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-lg">
+                <li><a href="index.html" class="hover:text-orange-500 hvr-bounce-in">Home</a></li>
+                <li><a href="teams.html" class="hover:text-orange-500 hvr-bounce-in">Teams</a></li>
+                <li><a href="schedule.html" class="hover:text-orange-500 hvr-bounce-in">Schedule</a></li>
+                <li><a href="points-table.html" class="hover:text-orange-500 hvr-bounce-in">Points Table</a></li>
+                <li><a href="stats.html" class="hover:text-orange-500 hvr-bounce-in">Stats</a></li>
+                <li><a href="highlights.html" class="hover:text-orange-500 hvr-bounce-in">Highlights</a></li>
+                <li><a href="about.html" class="hover:text-orange-500 hvr-bounce-in">About</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-center py-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="hover:text-orange-500 hvr-bounce-in">Home</a></li>
+                <li><a href="teams.html" class="hover:text-orange-500 hvr-bounce-in">Teams</a></li>
+                <li><a href="schedule.html" class="hover:text-orange-500 hvr-bounce-in">Schedule</a></li>
+                <li><a href="points-table.html" class="hover:text-orange-500 hvr-bounce-in">Points Table</a></li>
+                <li><a href="stats.html" class="hover:text-orange-500 hvr-bounce-in">Stats</a></li>
+                <li><a href="highlights.html" class="hover:text-orange-500 hvr-bounce-in">Highlights</a></li>
+                <li><a href="about.html" class="hover:text-orange-500 hvr-bounce-in">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header Section -->
+    <header class="text-center py-5 text-3xl md:text-4xl font-bold text-yellow-500 bg-gray-900">
+        🏏 IPL 2025 Teams
+    </header>
+
+    <!-- Teams Buttons Section -->
+    <section id="teamsButtons" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 p-5 container mx-auto">
+        <!-- Buttons will be loaded dynamically -->
+    </section>
+
+    <!-- Teams Cards Section -->
+    <section id="teamsContainer">
+        <!-- Cards will be loaded dynamically -->
+    </section>
+
+    <!-- IPL Trophies Bar Graph Section -->
+<section class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 neon-glow" data-aos="fade-up">IPL Trophies Won</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-10 md:gap-2" id="trophiesGraph">
+            <!-- Bars will be loaded dynamically -->
+        </div>
+    </div>
+
+    <style>
+        .bar {
+            height: 200px; /* Base height, adjusted dynamically */
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: growUp 1s ease-out forwards;
+            transform-origin: bottom;
+        }
+        .bar:hover {
+            transform: scale(1.05) rotate(2deg); /* Slight tilt on hover */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+        }
+        .tooltip {
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            display: none;
+            text-align: center;
+            width: 160px;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s ease-in;
+        }
+        .bar:hover .tooltip {
+            display: block;
+        }
+        /* Bar Colors */
+        .csk-bar { background-color: #FFC107; } /* Yellow */
+        .mi-bar { background-color: #003087; } /* Blue */
+        .srh-bar { background-color: #FF3C00; } /* Orange */
+        .rcb-bar { background-color: #D81E1E; } /* Red */
+        .kkr-bar { background-color: #3F1D5A; } /* Purple */
+        .rr-bar { background-color: #E91E63; } /* Pink */
+        .dc-bar { background-color: #0D47A1; } /* Blue */
+        .lsg-bar { background-color: #00BCD4; } /* Cyan */
+        .pbks-bar { background-color: #D32F2F; } /* Red */
+        .gt-bar { background-color: #1B5E20; } /* Green */
+
+        /* Grow Animation */
+        @keyframes growUp {
+            0% { transform: scaleY(0); }
+            80% { transform: scaleY(1.1); }
+            100% { transform: scaleY(1); }
+        }
+        /* Fade In for Tooltip */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .bar {
+                height: 150px; /* Reduced height for mobile */
+                margin: 0 auto;
+                width: 80%;
+            }
+            .tooltip {
+                width: 120px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <script>
+        // IPL Trophies Data (static)
+        const trophiesData = {
+            "CSK": { trophies: 5, years: ["2008", "2010", "2011", "2018", "2021"], logo: "teams/csk.png" },
+            "MI": { trophies: 5, years: ["2013", "2015", "2017", "2019", "2020"], logo: "teams/mi.png" },
+            "SRH": { trophies: 1, years: ["2016"], logo: "teams/srh.png" },
+            "RCB": { trophies: 0, years: [], logo: "teams/rcb.png" },
+            "KKR": { trophies: 3, years: ["2012", "2014", "2024"], logo: "teams/kkr.png" },
+            "RR": { trophies: 1, years: ["2008"], logo: "teams/rr.png" },
+            "DC": { trophies: 0, years: [], logo: "teams/dc.png" },
+            "LSG": { trophies: 0, years: [], logo: "teams/lsg.png" },
+            "PBKS": { trophies: 0, years: [], logo: "teams/pbks.png" },
+            "GT": { trophies: 1, years: ["2022"], logo: "teams/gt.png" }
+        };
+
+        // Render Bar Graph
+        document.addEventListener("DOMContentLoaded", () => {
+            const graphContainer = document.getElementById("trophiesGraph");
+            const maxTrophies = Math.max(...Object.values(trophiesData).map(t => t.trophies));
+
+            Object.keys(trophiesData).forEach((team, index) => {
+                const trophies = trophiesData[team].trophies;
+                const years = trophiesData[team].years;
+                const logo = trophiesData[team].logo;
+                const height = trophies === 0 ? 20 : (trophies / maxTrophies) * 200; // Minimum height for 0 trophies
+
+                const bar = document.createElement("div");
+                bar.className = `bar ${team.toLowerCase()}-bar flex items-end justify-center`;
+                bar.style.height = `${height}px`;
+                bar.setAttribute("data-aos", "fade-up");
+                bar.setAttribute("data-aos-delay", `${index * 100}`); // Staggered animation
+                bar.innerHTML = `
+                    <div class="tooltip">
+                        <img src="${logo}" alt="${team}" class="w-12 h-12 object-contain mx-auto mb-2">
+                        <p>${team}: ${trophies} Troph${trophies === 1 ? "y" : "ies"}</p>
+                        ${years.length > 0 ? `<p>Years: ${years.join(", ")}</p>` : "<p>No trophies yet</p>"}
+                    </div>
+                    <span class="text-white text-sm">${trophies}</span>
+                `;
+                graphContainer.appendChild(bar);
+            });
+        });
+    </script>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 neon-glow" data-aos="fade-up">Fun Facts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-lg">🏏 Chris Gayle holds the record for the highest individual IPL score – 175*!</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-lg">🔥 MS Dhoni has played the most IPL finals as a captain – 10 times!</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-lg">💥 Sunrisers Hyderabad (SRH) set a new benchmark by scoring 287/3 against Royal Challengers Bengaluru (RCB), surpassing their own previous record of 277/3 against Mumbai Indians (MI).</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-lg">🌟 Virat Kohli is the leading run-scorer in IPL history with over 7,500 runs!</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                <p class="text-lg">🎯 Jasprit Bumrah has the best bowling figures in an IPL match – 5/10!</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+                <p class="text-lg">The SRH vs. RCB match amassed a total of 549 runs, marking the highest combined score in IPL history.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="700">
+                <p class="text-lg">In the same high-scoring encounter between SRH and RCB, a record 81 boundaries (fours and sixes) were hit.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="800">
+                <p class="text-lg">Abhishek Sharma of SRH smashed 42 sixes during the season, surpassing Virat Kohli's previous record of 38 sixes in 2016.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg" data-aos="fade-up" data-aos-delay="900">
+                <p class="text-lg">Sunil Narine of Kolkata Knight Riders (KKR) became the first player in IPL history to win the MVP award three times, adding the 2024 title to his previous accolades from 2012 and 2018.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 md:space-x-6 footer-social-links mb-4">
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-x-twitter text-xl"></i> Twitter</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-instagram text-xl"></i> Instagram</a>
+                <a href="#" class="text-orange-500 hover:text-orange-600"><i class="fab fa-facebook text-xl"></i> Facebook</a>
+            </div>
+            <p class="text-gray-400">Contact: support@iplverse.com | © 2025 IPLVerse. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="index.html" class="text-orange-500 hover:text-orange-600 mx-2">Home</a>
+                <a href="teams.html" class="text-orange-500 hover:text-orange-600 mx-2">Teams</a>
+                <a href="schedule.html" class="text-orange-500 hover:text-orange-600 mx-2">Schedule</a>
+                <a href="about.html" class="text-orange-500 hover:text-orange-600 mx-2">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Logo Typing Animation
+        const logo = document.querySelector('.animate-logo');
+        const text = logo.textContent;
+        logo.textContent = '';
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                logo.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 150);
+            }
+        }
+        typeWriter();
+
+        // Fetch and Render Teams
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("teams.json")
+                .then(response => response.json())
+                .then(data => {
+                    const teamsButtons = document.getElementById("teamsButtons");
+                    const teamsContainer = document.getElementById("teamsContainer");
+
+                    data.teams.forEach(team => {
+                        // Create Circular Button
+                        const button = document.createElement("div");
+                        button.className = "team-button hvr-grow";
+                        button.innerHTML = `<img src="${team.logo}" alt="${team.name}" class="w-full h-full object-contain">`;
+                        teamsButtons.appendChild(button);
+
+                        // Create Team Card
+                        const teamCard = document.createElement("div");
+                        teamCard.className = `team-card ${team.short_name.toLowerCase()}`;
+                        teamCard.id = `${team.short_name}-card`;
+                        teamCard.innerHTML = `
+                            <button class="close-btn">✖</button>
+                            <div class="flex flex-col items-center">
+                                <img src="${team.logo}" alt="${team.name}" class="w-24 h-24 object-contain mb-4">
+                                <h2 class="text-2xl font-bold">${team.name}</h2>
+                                <p class="text-sm">Captain: ${team.captain}</p>
+                                <p class="text-sm">Coach: ${team.coach}</p>
+                                <p class="text-sm">Home Ground: ${team.home_ground}</p>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-lg font-semibold">Squad</h3>
+                                <p><strong>Batsmen:</strong> ${team.squad.batsmen.join(", ")}</p>
+                                <p><strong>Bowlers:</strong> ${team.squad.bowlers.join(", ")}</p>
+                                <p><strong>All-Rounders:</strong> ${team.squad.all_rounders.join(", ")}</p>
+                                <p><strong>Wicket-Keepers:</strong> ${team.squad.wicket_keepers.join(", ")}</p>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-lg font-semibold">IPL 2024 Performance</h3>
+                                <p>Matches Played: ${team.ipl_2024_performance.matches_played}</p>
+                                <p>Wins: ${team.ipl_2024_performance.wins}</p>
+                                <p>Losses: ${team.ipl_2024_performance.losses}</p>
+                                <p>Points: ${team.ipl_2024_performance.points}</p>
+                                <p>Final Position: ${team.ipl_2024_performance.position}</p>
+                            </div>
+                            <a href="${getOfficialLink(team.short_name)}" target="_blank" class="mt-4 bg-orange-500 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-orange-600 transition duration-300 hvr-grow">Official Page</a>
+                        `;
+                        teamsContainer.appendChild(teamCard);
+
+                        // Button Click Event
+                        button.addEventListener("click", () => {
+                            const activeCard = document.querySelector(".team-card.fade-in");
+                            if (activeCard && activeCard !== teamCard) {
+                                activeCard.classList.remove("fade-in");
+                                activeCard.classList.add("fade-out");
+                                setTimeout(() => activeCard.style.display = "none", 500);
+                            }
+                            teamCard.style.display = "block";
+                            teamCard.classList.remove("fade-out");
+                            teamCard.classList.add("fade-in");
+                        });
+
+                        // Close Button Event
+                        teamCard.querySelector(".close-btn").addEventListener("click", () => {
+                            teamCard.classList.remove("fade-in");
+                            teamCard.classList.add("fade-out");
+                            setTimeout(() => teamCard.style.display = "none", 500);
+                        });
+                    });
+                })
+                .catch(error => console.error("Error loading teams:", error));
+        });
+
+        // Official Page Links
+        function getOfficialLink(shortName) {
+            const links = {
+                "CSK": "https://www.chennaisuperkings.com/",
+                "MI": "https://www.mumbaiindians.com/",
+                "SRH": "https://www.sunrisershyderabad.in/",
+                "RCB": "https://www.royalchallengers.com/",
+                "KKR": "https://www.kkr.in/",
+                "RR": "https://www.rajasthanroyals.com/",
+                "DC": "https://www.delhicapitals.in/",
+                "LSG": "https://www.lucknowsupergiants.in/",
+                "PBKS": "https://www.punjabkingsipl.in/",
+                "GT": "https://www.gujarattitansipl.com/"
+            };
+            return links[shortName] || "#";
+        }
+    </script>
+</body>
+</html>

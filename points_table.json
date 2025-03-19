@@ -1,0 +1,195 @@
+{
+    "2008": [
+    { "rank": 1, "team": "Rajasthan Royals", "matches": 14, "won": 11, "lost": 3, "tied": 0, "points": 22, "nrr": "+0.632" },
+    { "rank": 2, "team": "Punjab Kings", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+0.509" },
+    { "rank": 3, "team": "Chennai Super Kings", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.192" },
+    { "rank": 4, "team": "Delhi Daredevils", "matches": 14, "won": 7, "lost": 6, "tied": 1, "points": 15, "nrr": "+0.342" },
+    { "rank": 5, "team": "Mumbai Indians", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.570" },
+    { "rank": 6, "team": "Kolkata Knight Riders", "matches": 14, "won": 6, "lost": 7, "tied": 1, "points": 13, "nrr": "-0.147" },
+    { "rank": 7, "team": "Royal Challengers Bangalore", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-1.160" },
+    { "rank": 8, "team": "Deccan Chargers", "matches": 14, "won": 2, "lost": 12, "tied": 0, "points": 4, "nrr": "-0.467" }
+    ],
+    "2009": [
+    { "rank": 1, "team": "Delhi Daredevils", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+0.311" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 8, "lost": 5, "tied": 1, "points": 17, "nrr": "+0.951" },
+    { "rank": 3, "team": "Royal Challengers Bangalore", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.191" },
+    { "rank": 4, "team": "Deccan Chargers", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.203" },
+    { "rank": 5, "team": "Punjab Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.483" },
+    { "rank": 6, "team": "Rajasthan Royals", "matches": 14, "won": 6, "lost": 7, "tied": 1, "points": 13, "nrr": "-0.352" },
+    { "rank": 7, "team": "Mumbai Indians", "matches": 14, "won": 5, "lost": 8, "tied": 1, "points": 11, "nrr": "+0.297" },
+    { "rank": 8, "team": "Kolkata Knight Riders", "matches": 14, "won": 3, "lost": 10, "tied": 1, "points": 7, "nrr": "-0.789" }
+    ],  
+    "2010": [
+    { "rank": 1, "team": "Mumbai Indians", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+1.084" },
+    { "rank": 2, "team": "Deccan Chargers", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.297" },
+    { "rank": 3, "team": "Chennai Super Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.274" },
+    { "rank": 4, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.219" },
+    { "rank": 5, "team": "Delhi Daredevils", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.021" },
+    { "rank": 6, "team": "Kolkata Knight Riders", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.341" },
+    { "rank": 7, "team": "Rajasthan Royals", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.514" },
+    { "rank": 8, "team": "Punjab Kings", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.478" }   
+    ],
+    "2011": [
+    { "rank": 1, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 9, "lost": 4, "tied": 1, "points": 19, "nrr": "+0.326" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.443" },
+    { "rank": 3, "team": "Mumbai Indians", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.040" },
+    { "rank": 4, "team": "Kolkata Knight Riders", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "+0.433" },
+    { "rank": 5, "team": "Punjab Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.051" },
+    { "rank": 6, "team": "Rajasthan Royals", "matches": 14, "won": 6, "lost": 7, "tied": 1, "points": 13, "nrr": "-0.691" },
+    { "rank": 7, "team": "Deccan Chargers", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.222" },
+    { "rank": 8, "team": "Kochi Tuskers Kerala", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.214" },
+    { "rank": 9, "team": "Pune Warriors India", "matches": 14, "won": 4, "lost": 9, "tied": 1, "points": 9, "nrr": "-0.134" },
+    { "rank": 10, "team": "Delhi Daredevils", "matches": 14, "won": 4, "lost": 9, "tied": 1, "points": 9, "nrr": "-0.448" }
+    ],
+    "2012": [
+    { "rank": 1, "team": "Delhi Capitals", "matches": 16, "won": 11, "lost": 5, "tied": 0, "points": 22, "nrr": "+0.617" },
+    { "rank": 2, "team": "Kolkata Knight Riders", "matches": 16, "won": 10, "lost": 5, "tied": 1, "points": 21, "nrr": "+0.561" },
+    { "rank": 3, "team": "Mumbai Indians", "matches": 16, "won": 10, "lost": 6, "tied": 0, "points": 20, "nrr": "-0.100" },
+    { "rank": 4, "team": "Chennai Super Kings", "matches": 16, "won": 8, "lost": 7, "tied": 1, "points": 17, "nrr": "+0.100" },
+    { "rank": 5, "team": "Royal Challengers Bengaluru", "matches": 16, "won": 8, "lost": 7, "tied": 1, "points": 17, "nrr": "-0.022" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 16, "won": 8, "lost": 8, "tied": 0, "points": 16, "nrr": "-0.216" },
+    { "rank": 7, "team": "Rajasthan Royals", "matches": 16, "won": 7, "lost": 9, "tied": 0, "points": 14, "nrr": "+0.201" },
+    { "rank": 8, "team": "Deccan Chargers", "matches": 16, "won": 4, "lost": 11, "tied": 1, "points": 9, "nrr": "-0.509" },
+    { "rank": 9, "team": "Pune Warriors India", "matches": 16, "won": 4, "lost": 12, "tied": 0, "points": 8, "nrr": "-0.551" }
+    ],
+    "2013": [
+    { "rank": 1, "team": "Chennai Super Kings", "matches": 16, "won": 11, "lost": 5, "tied": 0, "points": 22, "nrr": "+0.530" },
+    { "rank": 2, "team": "Mumbai Indians", "matches": 16, "won": 11, "lost": 5, "tied": 0, "points": 22, "nrr": "+0.441" },
+    { "rank": 3, "team": "Rajasthan Royals", "matches": 16, "won": 10, "lost": 6, "tied": 0, "points": 20, "nrr": "+0.322" },
+    { "rank": 4, "team": "Sunrisers Hyderabad", "matches": 16, "won": 10, "lost": 6, "tied": 0, "points": 20, "nrr": "+0.003" },
+    { "rank": 5, "team": "Royal Challengers Bengaluru", "matches": 16, "won": 9, "lost": 7, "tied": 0, "points": 18, "nrr": "+0.457" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 16, "won": 8, "lost": 8, "tied": 0, "points": 16, "nrr": "+0.226" },
+    { "rank": 7, "team": "Kolkata Knight Riders", "matches": 16, "won": 6, "lost": 10, "tied": 0, "points": 12, "nrr": "-0.095" },
+    { "rank": 8, "team": "Pune Warriors India", "matches": 16, "won": 4, "lost": 12, "tied": 0, "points": 8, "nrr": "-1.006" },
+    { "rank": 9, "team": "Delhi Daredevils", "matches": 16, "won": 3, "lost": 13, "tied": 0, "points": 6, "nrr": "-0.848" }
+    ],
+    "2014": [
+    { "rank": 1, "team": "Punjab Kings", "matches": 14, "won": 11, "lost": 3, "tied": 0, "points": 22, "nrr": "+0.968" },
+    { "rank": 2, "team": "Kolkata Knight Riders", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.418" },
+    { "rank": 3, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.385" },
+    { "rank": 4, "team": "Mumbai Indians", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.095" },
+    { "rank": 5, "team": "Rajasthan Royals", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.060" },
+    { "rank": 6, "team": "Sunrisers Hyderabad", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.399" },
+    { "rank": 7, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 5, "lost": 9, "tied": 0, "points": 10, "nrr": "-0.428" },
+    { "rank": 8, "team": "Delhi Daredevils", "matches": 14, "won": 2, "lost": 12, "tied": 0, "points": 4, "nrr": "-1.182" }
+    ],
+    "2015": [
+    { "rank": 1, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.709" },
+    { "rank": 2, "team": "Mumbai Indians", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.043" },
+    { "rank": 3, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 7, "lost": 5, "tied": 2, "points": 16, "nrr": "+1.037" },
+    { "rank": 4, "team": "Rajasthan Royals", "matches": 14, "won": 7, "lost": 5, "tied": 2, "points": 16, "nrr": "+0.062" },
+    { "rank": 5, "team": "Kolkata Knight Riders", "matches": 14, "won": 7, "lost": 6, "tied": 1, "points": 15, "nrr": "+0.253" },
+    { "rank": 6, "team": "Sunrisers Hyderabad", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.239" },
+    { "rank": 7, "team": "Delhi Daredevils", "matches": 14, "won": 5, "lost": 8, "tied": 1, "points": 11, "nrr": "-0.049" },
+    { "rank": 8, "team": "Punjab Kings", "matches": 14, "won": 3, "lost": 11, "tied": 0, "points": 6, "nrr": "-1.436" }
+    ],
+    "2016": [
+    { "rank": 1, "team": "Gujarat Lions", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "-0.374" },
+    { "rank": 2, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "0.932" },
+    { "rank": 3, "team": "Sunrisers Hyderabad", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "0.245" },
+    { "rank": 4, "team": "Kolkata Knight Riders", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "0.106" },
+    { "rank": 5, "team": "Mumbai Indians", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.146" },
+    { "rank": 6, "team": "Delhi Daredevils", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.155" },
+    { "rank": 7, "team": "Rising Pune Supergiant", "matches": 14, "won": 5, "lost": 9, "tied": 0, "points": 10, "nrr": "0.015" },
+    { "rank": 8, "team": "Punjab Kings", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.646" }
+    ],
+    "2017": [
+    { "rank": 1, "team": "Mumbai Indians", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "0.784" },
+    { "rank": 2, "team": "Rising Pune Supergiants", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "0.176" },
+    { "rank": 3, "team": "Sunrisers Hyderabad", "matches": 14, "won": 8, "lost": 5, "tied": 1, "points": 17, "nrr": "0.599" },
+    { "rank": 4, "team": "Kolkata Knight Riders", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "0.641" },
+    { "rank": 5, "team": "Punjab Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.009" },
+    { "rank": 6, "team": "Delhi Daredevils", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.512" },
+    { "rank": 7, "team": "Gujarat Lions", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.412" },
+    { "rank": 8, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 3, "lost": 10, "tied": 1, "points": 7, "nrr": "-1.299" }
+    ],
+    "2018": [
+    { "rank": 1, "team": "Sunrisers Hyderabad", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.284" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.253" },
+    { "rank": 3, "team": "Kolkata Knight Riders", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.07" },
+    { "rank": 4, "team": "Rajasthan Royals", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.25" },
+    { "rank": 5, "team": "Mumbai Indians", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.317" },
+    { "rank": 6, "team": "Royal Challengers Bengaluru", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.129" },
+    { "rank": 7, "team": "Punjab Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.502" },
+    { "rank": 8, "team": "Delhi Daredevils", "matches": 14, "won": 5, "lost": 9, "tied": 0, "points": 10, "nrr": "-0.222" }
+    ],
+    "2019": [
+    { "rank": 1, "team": "Mumbai Indians", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.421" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.131" },
+    { "rank": 3, "team": "Delhi Capitals", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.044" },
+    { "rank": 4, "team": "Sunrisers Hyderabad", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.577" },
+    { "rank": 5, "team": "Kolkata Knight Riders", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.028" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.251" },
+    { "rank": 7, "team": "Rajasthan Royals", "matches": 14, "won": 5, "lost": 8, "tied": 1, "points": 11, "nrr": "-0.449" },
+    { "rank": 8, "team": "Royal Challengers Bangalore", "matches": 14, "won": 5, "lost": 8, "tied": 1, "points": 11, "nrr": "-0.607" }
+    ],
+    "2020": [
+    { "rank": 1, "team": "Mumbai Indians", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+1.107" },
+    { "rank": 2, "team": "Deccan Chargers", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.109" },
+    { "rank": 3, "team": "Sunrisers Hyderabad", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.608" },
+    { "rank": 4, "team": "Royal Challengers Bangalore", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.172" },
+    { "rank": 5, "team": "Kolkata Knight Riders", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "-0.214" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.162" },
+    { "rank": 7, "team": "Chennai Super Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.455" },
+    { "rank": 8, "team": "Rajasthan Royals", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.569" }
+    ],
+    "2021": [
+    { "rank": 1, "team": "Delhi Capitals", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+0.481" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.455" },
+    { "rank": 3, "team": "Royal Challengers Bangalore", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "-0.14" },
+    { "rank": 4, "team": "Kolkata Knight Riders", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.587" },
+    { "rank": 5, "team": "Mumbai Indians", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.116" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.001" },
+    { "rank": 7, "team": "Rajasthan Royals", "matches": 14, "won": 5, "lost": 9, "tied": 0, "points": 10, "nrr": "-0.993" },
+    { "rank": 8, "team": "Sunrisers Hyderabad", "matches": 14, "won": 3, "lost": 11, "tied": 0, "points": 6, "nrr": "-0.545" }
+    ],
+    "2022": [
+    { "rank": 1, "team": "Gujarat Titans", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+0.316" },
+    { "rank": 2, "team": "Rajasthan Royals", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.298" },
+    { "rank": 3, "team": "Lucknow Super Giants", "matches": 14, "won": 9, "lost": 5, "tied": 0, "points": 18, "nrr": "+0.251" },
+    { "rank": 4, "team": "Royal Challengers Bangalore", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.253" },
+    { "rank": 5, "team": "Delhi Capitals", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.204" },
+    { "rank": 6, "team": "Punjab Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.126" },
+    { "rank": 7, "team": "Kolkata Knight Riders", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "+0.146" },
+    { "rank": 8, "team": "Sunrisers Hyderabad", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.379" },
+    { "rank": 9, "team": "Chennai Super Kings", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.203" },
+    { "rank": 10, "team": "Mumbai Indians", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.506" }
+    ],
+    "2023": [
+    { "rank": 1, "team": "Gujarat Titans", "matches": 14, "won": 10, "lost": 4, "tied": 0, "points": 20, "nrr": "+0.809" },
+    { "rank": 2, "team": "Chennai Super Kings", "matches": 14, "won": 8, "lost": 5, "tied": 1, "points": 17, "nrr": "+0.652" },
+    { "rank": 3, "team": "Lucknow Super Giants", "matches": 14, "won": 8, "lost": 5, "tied": 1, "points": 17, "nrr": "+0.284" },
+    { "rank": 4, "team": "Mumbai Indians", "matches": 14, "won": 8, "lost": 6, "tied": 0, "points": 16, "nrr": "-0.044" },
+    { "rank": 5, "team": "Rajasthan Royals", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.148" },
+    { "rank": 6, "team": "Royal Challengers Bangalore", "matches": 14, "won": 7, "lost": 7, "tied": 0, "points": 14, "nrr": "+0.135" },
+    { "rank": 7, "team": "Kolkata Knight Riders", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.239" },
+    { "rank": 8, "team": "Punjab Kings", "matches": 14, "won": 6, "lost": 8, "tied": 0, "points": 12, "nrr": "-0.304" },
+    { "rank": 9, "team": "Delhi Capitals", "matches": 14, "won": 5, "lost": 9, "tied": 0, "points": 10, "nrr": "-0.808" },
+    { "rank": 10, "team": "Sunrisers Hyderabad", "matches": 14, "won": 4, "lost": 10, "tied": 0, "points": 8, "nrr": "-0.590" }
+    ],
+    "2024": [
+    { "rank": 1, "team": "Kolkata Knight Riders", "matches": 14, "won": 9, "lost": 3, "tied": 2, "nr": 0, "points": 20, "nrr": "+1.428" },
+    { "rank": 2, "team": "Sunrisers Hyderabad", "matches": 14, "won": 8, "lost": 5, "tied": 1, "nr": 0, "points": 17, "nrr": "+0.414" },
+    { "rank": 3, "team": "Rajasthan Royals", "matches": 14, "won": 8, "lost": 5, "tied": 1, "nr": 0, "points": 17, "nrr": "+0.273" },
+    { "rank": 4, "team": "Royal Challengers Bangalore", "matches": 14, "won": 7, "lost": 7, "tied": 0, "nr": 0, "points": 14, "nrr": "+0.459" },
+    { "rank": 5, "team": "Chennai Super Kings", "matches": 14, "won": 7, "lost": 7, "tied": 0, "nr": 0, "points": 14, "nrr": "+0.392" },
+    { "rank": 6, "team": "Delhi Capitals", "matches": 14, "won": 7, "lost": 7, "tied": 0, "nr": 0, "points": 14, "nrr": "-0.377" },
+    { "rank": 7, "team": "Lucknow Super Giants", "matches": 14, "won": 7, "lost": 7, "tied": 0, "nr": 0, "points": 14, "nrr": "-0.667" },
+    { "rank": 8, "team": "Gujarat Titans", "matches": 14, "won": 5, "lost": 7, "tied": 2, "nr": 0, "points": 12, "nrr": "-1.063" },
+    { "rank": 9, "team": "Punjab Kings", "matches": 14, "won": 5, "lost": 9, "tied": 0, "nr": 0, "points": 10, "nrr": "-0.353" },
+    { "rank": 10, "team": "Mumbai Indians", "matches": 14, "won": 4, "lost": 10, "tied": 0, "nr": 0, "points": 8, "nrr": "-0.318" }
+    ],
+    "2025": [
+    { "rank": 1, "team": "Chennai Super Kings", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 2, "team": "Delhi Capitals", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 3, "team": "Gujarat Titans", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 4, "team": "Kolkata Knight Riders", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 5, "team": "Lucknow Super Giants", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 6, "team": "Mumbai Indians", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 7, "team": "Punjab Kings", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 8, "team": "Rajasthan Royals", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 9, "team": "Royal Challengers Bangalore", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" },
+    { "rank": 10, "team": "Sunrisers Hyderabad", "matches": 0, "won": 0, "lost": 0, "tied": 0, "points": 0, "nrr": "0.000" }
+    ]
+  }
+  

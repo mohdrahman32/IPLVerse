@@ -1,0 +1,219 @@
+{
+    "teams": [
+      {
+        "name": "Chennai Super Kings",
+        "short_name": "CSK",
+        "logo": "teams/csk.png",
+        "captain": "Ruturaj Gaikwad",
+        "coach": "Stephen Fleming",
+        "home_ground": "MA Chidambaram Stadium, Chennai",
+        "squad": {
+          "batsmen": ["Ruturaj Gaikwad", "MS Dhoni","Devon Conway", "Rahul Tripathi","Shaik Rasheed", "Andre Siddarth","Vansd Bedi"],
+          "bowlers": ["Khaleel Ahmed Chahar", "Noor Ahmad", "Matheesha Pathirana", "Nathan Ellis", "Gurjapneet Singh","Shreyas Gopal"],
+          "all_rounders": ["Ravindra Jadeja", "Rachin Ravindra", "Shivam Dube", "Ravichandran Ashwin", "Vijay Shankar", "Sam Curran", "Jamie Overton", "Deepak Hooda"],
+          "wicket_keepers": ["MS Dhoni","Vansd Bedi"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 7,
+          "losses": 7,
+          "NR" : 0,
+          "points": 14,
+          "position": 5
+        }
+      },
+      {
+        "name": "Mumbai Indians",
+        "short_name": "MI",
+        "logo": "teams/mi.png",
+        "captain": "Hardik Pandya",
+        "coach": "Mahela Jayawardene",
+        "home_ground": "Wankhede Stadium, Mumbai",
+        "squad": {
+          "batsmen": ["Rohit Sharma", "Tilak Varma","Shrijith Krishnan", "Suryakumar Yadav", "Ryan Rickelton", "Bevon-John Jacobs","Robin Minz"],
+          "bowlers": ["Jasprit Bumrah", "Trent Boult", "Deepak Chahar", "Reece Topley", "Mujeed Ur Rahman", "Ashwani Kumar"],
+          "all_rounders": ["Hardik Pandya", "Will Jacks", "Naman Dhir", "Mitchell Santner", "Raj Angad Bawa", "Vignesh Puthur", "Corbin Bosch"],
+          "wicket_keepers": ["Shrijith Krishnan","Robin Minz","Ryan Rickelton"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 4,
+          "losses": 10,
+          "NR" : 0,
+          "points": 8,
+          "position": 10
+        }
+      },{
+        "name": "Sunrisers Hyderabad",
+        "short_name": "SRH",
+        "logo": "teams/srh.png",
+        "captain": "Pat Cummins",
+        "coach": "Daniel Vettori",
+        "home_ground": "Rajiv Gandhi International Stadium, Hyderabad",
+        "squad": {
+          "batsmen": ["Travis Head", "Abhishek Sharma", "Ishan Kishan", "Nitish Kumar Reddy", "Atharva Taide", "Abhinav Manohar", "Sachin Baby"],
+          "bowlers": ["Mohammed Shami", "Harshal Patel", "Rahul Chahar", "Adam Zampa", "Simarjeet Singh", "Zeeshan Ansari", "Jaydev Unadkat", "Eshan Malinga"],
+          "all_rounders": ["Pat Cummins", "Heinrich Klaasen", "Wiaan Mulder", "Kamindu Mendis", "Aniket Verma"],
+          "wicket_keepers": ["Ishan Kishan", "Heinrich Klaasen"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 8,
+          "losses": 5,
+          "NR" : 1,
+          "points": 16,
+          "position": 2
+        }
+      },{
+        "name": "Royal Challengers Bengaluru",
+        "short_name": "RCB",
+        "logo": "teams/rcb.png",
+        "captain": "Rajat Patidar",
+        "coach": "Andy Flower",
+        "home_ground": "M. Chinnaswamy Stadium, Bengaluru",
+        "squad": {
+          "batsmen": ["Virat Kohli", "Rajat Patidar", "Devdutt Padikkal", "Phil Salt", "Swastik Chhikara"],
+          "bowlers": ["Yash Dayal", "Josh Hazlewood", "Bhuvneshwar Kumar", "Lungi Ngidi", "Rasikh Dar", "Suyash Sharma"],
+          "all_rounders": ["Liam Livingstone", "Krunal Pandya", "Tim David", "Romario Shepherd", "Jacob Bethell", "Manoj Bhandage"],
+          "wicket_keepers": ["Jitesh Sharma"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 7,
+          "losses": 7,
+          "NR": 0,
+          "points": 14,
+          "position": 4
+        }
+      },{
+        "name": "Kolkata Knight Riders",
+        "short_name": "KKR",
+        "logo": "teams/kkr.png",
+        "captain": "Ajinkya Rahane",
+        "coach": "Dwayne Bravo",
+        "home_ground": "Eden Gardens, Kolkata",
+        "squad": {
+          "batsmen": ["Ajinkya Rahane","Venkatesh Iyer", "Rinku Singh", "Angkrish Raghuvanshi", "Quinton de Kock", "Rahmanullah Gurbaz", "Rovman Powell", "Manish Pandey"],
+          "bowlers": ["Varun Chakravarthy", "Sunil Narine", "Anrich Nortje", "Vaibhav Arora", "Mayank Markande", "Spencer Johnson", "Umran Malik"],
+          "all_rounders": ["Andre Russell", "Sunil Narine", "Ramandeep Singh", "Venkatesh Iyer", "Moeen Ali", "Anukul Roy"],
+          "wicket_keepers": ["Quinton de Kock", "Rahmanullah Gurbaz"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 9,
+          "losses": 3,
+          "NR" : 2,
+          "points": 20,
+          "position": 1
+        }
+      },{
+        "name": "Rajasthan Royals",
+        "short_name": "RR",
+        "logo": "teams/rr.png",
+        "captain": "Sanju Samson",
+        "coach": "Rahul Dravid",
+        "home_ground": "Sawai Mansingh Stadium, Jaipur",
+        "squad": {
+            "batsmen": ["Sanju Samson","Yashasvi Jaiswal","Riyan Parag","Shimron Hetmyer","Nitish Rana", "Shubham Dubey","Vaibhav Suryavanshi","Dhruv Jurel","Kunal Singh Rathore"],
+            "bowlers": ["Sandeep Sharma","Jofra Archer","Maheesh Theekshana","Wanindu Hasaranga","Akash Madhwal","Kumar Kartikeya","Tushar Deshpande","Yudhvir Singh","Fazalhaq Farooqi","Kwena Maphaka","Ashok Sharma" ],
+            "all_rounders": ["Riyan Parag","Wanindu Hasaranga","Shubham Dubey","Yudhvir Singh","Kwena Maphaka"],
+            "wicket_keepers": ["Sanju Samson","Dhruv Jurel","Kunal Singh Rathore"]
+        },
+        "ipl_2024_performance": {
+            "matches_played": 17,
+            "wins": 9,
+            "losses": 8,
+            "NR": 0,
+            "points": 18,
+            "position": 3
+        }
+    },{
+        "name": "Delhi Capitals",
+        "short_name": "DC",
+        "logo": "teams/dc.png",
+        "captain": "Axar Patel",
+        "coach": "Hemang Badani",
+        "home_ground": "Arun Jaitley Stadium, New Delhi",
+        "squad": {
+          "batsmen": ["KL Rahul", "Sameer Rizvi", "Faf du Plessis", "Jake Fraser-McGurk", "Karun Nair", "Abishek Porel"],
+          "bowlers": ["Mitchell Starc", "T. Natarajan", "Kuldeep Yadav", "Mukesh Kumar", "Mohit Sharma"],
+          "all_rounders": ["Axar Patel", "Ashutosh Sharma", "Tristan Stubbs"],
+          "wicket_keepers": ["Abishek Porel", "KL Rahul"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 7,
+          "losses": 7,
+          "NR": 0,
+          "points": 14,
+          "position": 6
+        }
+      },
+      {
+        "name": "Lucknow Super Giants",
+        "short_name": "LSG",
+        "logo": "teams/lsg.png",
+        "captain": "Rishabh Pant",
+        "coach": "Justin Langer",
+        "home_ground": "BRSABV Ekana Cricket Stadium, Lucknow",
+        "squad": {
+          "batsmen": ["Rishabh Pant", "David Miller", "Aiden Markram", "Nicholas Pooran", "Aryan Juyal", "Matthew Breetzke"],
+          "bowlers": ["Avesh Khan", "Mayank Yadav", "Mohsin Khan", "Ravi Bishnoi", "Akash Deep", "Shamar Jospeph"],
+          "all_rounders": ["Mitchell Marsh","Abdul Samad", "Shahbaz Ahamad", "Ayush Badoni", "Yuvraj Chaudhary"],
+          "wicket_keepers": ["Rishabh Pant", "Nicholas Pooran"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 7,
+          "losses": 7,
+          "NR": 0,
+          "points": 14,
+          "position": 7
+        }
+      },{
+        "name": "Punjab Kings",
+        "short_name": "PBKS",
+        "logo": "teams/pbks.png",
+        "captain": "Shreyas Iyer",
+        "coach": "Ricky Ponting",
+        "home_ground": "PCA New Stadium, Mullanpur",
+        "squad": {
+          "batsmen": ["Shreyas Iyer", "Priyansh Arya", "Pyla Avinash", "Harnoor Singh", "Suryansh Shedge", "Musheer Khan", "Nehal Wadhera", "Shashank Singh"],
+          "bowlers": ["Yuzvendra Chahal", "Xavier Bartlett", "Lockie Ferguson", "Kuldeep Sen", "Arshdeep Singh", "Yash Thakur", "Vijaykumar Vyshak", "Praveen Dubey"],
+          "all_rounders": ["Harpreet Brar", "Aaron Hardie", "Glenn Maxwell", "Azmatullah Omarzai", "Marcus Stoinis", "Marco Jansen"],
+          "wicket_keepers": ["Prabhsimran Singh", "Josh Inglis", "Vishnu Vinod"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 5,
+          "losses": 9,
+          "NR": 0,
+          "points": 10,
+          "position": 9
+        }
+      },{
+        "name": "Gujarat Titans",
+        "short_name": "GT",
+        "logo": "teams/gt.png",
+        "captain": "Shubman Gill",
+        "coach": "Ashish Nehra",
+        "home_ground": "Narendra Modi Stadium, Ahmedabad",
+        "squad": {
+          "batsmen": ["Shubman Gill", "Sai Sudharsan", "Jos Buttler", "Sherfane Rutherford","Matthew Wade", "Kumar Kushagra", "Anuj Rawat"],
+          "bowlers": ["Rashid Khan", "Kagiso Rabada", "Mohammed Siraj", "Prasidh Krishna", "Ishant Sharma", "Kulwant Khejroliya"],
+          "all_rounders": ["Rahul Tewatia", "Shahrukh Khan", "Washington Sundar", "Gerald Coetzee", "Jayant Yadav", "Karim Janat", "Arshad Khan", "Gurnoor Brar"],
+          "wicket_keepers": ["Matthew Wade", "Kumar Kushagra", "Anuj Rawat"]
+        },
+        "ipl_2024_performance": {
+          "matches_played": 14,
+          "wins": 5,
+          "losses": 7,
+          "NR": 2,
+          "points": 12,
+          "position": 8
+        }
+      }
+      
+    ]
+  }
+  
