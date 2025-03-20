@@ -74,6 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchTitle = `Match - ${match.match_id} (Playoffs: Finals): ${match.teams[0]} vs ${match.teams[1]}`;
             }
 
+            // Check if the match is one of the called-off matches (63, 66, 70)
+            const isCalledOffMatch = [63, 66, 70].includes(match.match_id);
+            const hoverContent = isCalledOffMatch
+                ? `<span class="video-message absolute top-50 left-50 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-70 text-white p-2 rounded text-sm opacity-0 transition-opacity duration-300">${match.highlight_video}</span>`
+                : `<a href="${match.highlight_video}" target="_blank" class="video-button">Watch Highlights</a>`;
+
             matchCard.innerHTML = `
                 <div class="flex items-center justify-between mb-2">
                     <div class="flex items-center">
@@ -90,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="hidden expanded-content mt-4" style="overflow: hidden; transition: max-height 0.5s ease;">
                     <div class="highlight-image relative">
                         <img src="highlights/match-${match.match_id}.jpg" alt="Match ${match.match_id} Highlights" class="w-full h-auto">
-                        <a href="${match.highlight_video}" target="_blank" class="video-button">Watch Highlights</a>
+                        ${hoverContent}
                     </div>
                     <div class="mt-2 text-sm">
                         <p><strong>Scorecard:</strong> ${match.scorecard.team1} vs ${match.scorecard.team2}</p>
@@ -105,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Expand/Collapse Functionality with Smooth Drop Effect
             matchCard.addEventListener('click', (e) => {
                 // Prevent the click on the video button from triggering the card expansion
-                if (e.target.classList.contains('video-button')) return;
+                if (e.target.classList.contains('video-button') || e.target.classList.contains('video-message')) return;
 
                 const expandedContent = matchCard.querySelector('.expanded-content');
                 const isExpanded = !expandedContent.classList.contains('hidden');
