@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/hover-min.css" rel="stylesheet">
     <!-- Google Fonts (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -67,6 +68,47 @@
             </ul>
         </div>
     </header>
+
+    <!-- IPL 2025 Countdown & Live Match Status -->
+<section class="py-8 bg-gray-900 text-center" id="countdown-section">
+    <div class="container mx-auto px-4">
+        <div id="match-container" class="bg-gray-800 rounded-lg p-6 shadow-lg max-w-3xl mx-auto">
+            <!-- Match Teams -->
+            <div id="match-teams" class="flex justify-center items-center space-x-6 mb-6">
+                <div class="flex flex-col items-center">
+                    <img id="team1-logo" src="" alt="Team 1 Logo" class="w-20 h-20 object-contain">
+                    <span id="team1-name" class="mt-2 text-lg font-semibold"></span>
+                </div>
+                <span class="text-2xl font-bold">vs</span>
+                <div class="flex flex-col items-center">
+                    <img id="team2-logo" src="" alt="Team 2 Logo" class="w-20 h-20 object-contain">
+                    <span id="team2-name" class="mt-2 text-lg font-semibold"></span>
+                </div>
+            </div>
+
+            <!-- Countdown / Live Status -->
+            <div id="countdown-live" class="mb-6">
+                <h3 id="status-text" class="text-3xl font-bold neon-glow mb-4"></h3>
+                <div id="countdown-timer" class="text-4xl font-mono hidden">
+                    <span id="days"></span>d <span id="hours"></span>h <span id="minutes"></span>m <span id="seconds"></span>s
+                </div>
+                <div id="live-indicator" class="hidden text-4xl font-bold text-red-500 animate-pulse">
+                    MATCH LIVE NOW
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-gray-700 rounded-full h-4 mb-4">
+                <div id="progress-bar" class="bg-orange-500 h-4 rounded-full" style="width: 0%; transition: width 1s linear;"></div>
+            </div>
+
+            <!-- Venue Details -->
+            <p id="venue-details" class="text-gray-400 text-lg"></p>
+        </div>
+    </div>
+    <!-- Particles.js Container -->
+    <div id="particles-js" class="absolute inset-0 -z-10 pointer-events-none"></div>
+</section>
 
     <!-- Hero Section -->
     <section class="gradient-bg py-20 text-center">
@@ -200,6 +242,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="countdown.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize AOS
